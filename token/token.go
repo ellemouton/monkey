@@ -21,8 +21,9 @@ const (
 	EOF     = "EOF"     // end of file. This tells our parser later on that it can stop
 
 	// Identifiers & literals
-	IDENT = "IDENT" // add, foobar, x, y, ...
-	INT   = "INT"   //  12345
+	IDENT  = "IDENT" // add, foobar, x, y, ...
+	INT    = "INT"   //  12345
+	STRING = "STRING"
 
 	// Operators
 	ASSIGN   = "="

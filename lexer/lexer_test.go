@@ -147,6 +147,16 @@ func TestNextToken1(t *testing.T) {
 				{token.EOF, ""},
 			},
 		},
+		{
+			name: "6",
+			input: `"foobar"
+				"foo bar"`,
+			expectedRes: []res{
+				{token.STRING, "foobar"},
+				{token.STRING, "foo bar"},
+				{token.EOF, ""},
+			},
+		},
 	}
 
 	for _, test := range tests {
